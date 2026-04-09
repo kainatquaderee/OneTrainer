@@ -5,4 +5,4 @@ torch==2.9.1+xpu
 torchvision==0.24.1+xpu
 onnxruntime
 
--r ./requirements-global.txt
+git+https://github.com/Disty0/ipex_to_cuda.git#egg=ipex_to_cuda

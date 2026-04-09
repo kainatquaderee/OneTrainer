@@ -6,7 +6,7 @@ from modules.ui.TrainUI import TrainUI
 import torch
 
 if torch.xpu.is_available():
-    from modules.ipex_to_cuda.src.ipex_to_cuda.__init__ import ipex_init
+    from ipex_to_cuda import ipex_init
     ipex_init()
     print("✓ CUDA → XPU hijacking active")
 
